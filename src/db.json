@@ -1,0 +1,24 @@
+{
+  "team": [
+    {
+      "img": "icons/Team/John.png",
+      "title": "John Filmr Doe",
+      "descr": "Managing Director"
+    },
+    {
+      "img": "icons/Team/Hineu.png",
+      "title": "Chystine Hineu",
+      "descr": "Lead Designer"
+    },
+    {
+      "img": "icons/Team/Martin.png",
+      "title": "Martin Matrone",
+      "descr": "Lead Developer"
+    },
+    {
+      "img": "icons/Team/Steve.png",
+      "title": "Steve Flaulkin",
+      "descr": "Sr. UI Designer"
+    }
+  ]
+}
