@@ -1,14 +1,19 @@
-function WeCards(arrowsSelector, contentSelector){
+function WeCards(arrowsSelector, itemsSelector, activeClass){
     
     const arrows = document.querySelectorAll(arrowsSelector);
-    const contents = document.querySelectorAll(contentSelector);
+    const contents = document.querySelectorAll(itemsSelector);
 
-    arrows.forEach(item => {
-        item.addEventListener('click', () => {
-            contents.forEach(item => {
-                item.style.display = "block";
+    arrows.forEach((item, index) => {
+        item.addEventListener('click', (e) => {
+            contents.forEach((itm, ind) => {
+                if(index === ind){
+                    if(itm.classList.contains(activeClass)){
+                        itm.classList.remove(activeClass);
+                    }else{
+                        itm.classList.add(activeClass);
+                    }
+                }
             });
-            item.style.transform= "rotate(180deg)";
         });
     })
 
