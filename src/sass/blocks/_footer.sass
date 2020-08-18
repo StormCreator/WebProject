@@ -1,0 +1,79 @@
+.footer
+    min-height: 560px
+    padding: 74px 0 60px 0
+    background-color: #f8f8f8
+    .container
+        padding: 0
+    &__wrapper
+        width: 100%
+        padding-bottom: 70px
+        border-bottom: 1px solid #e5e5e5
+        .row
+            padding: 0
+            margin: 0
+    &__mogo
+        &-title
+            color: #cccccc
+            font-size: 46px
+            font-weight: 700
+        &-descr
+            margin-top: 42px
+            color: $descr-text-color
+            font-family: Roboto
+            font-size: 15px
+            font-weight: 400
+            line-height: 24px
+        &-social
+            margin-top: 50px
+            color: $title-text-color
+            font-size: 18px
+            font-weight: 700
+            span
+                font-size: 14px
+                font-weight: 400
+            &_divider
+                margin-top: 18px
+                height: 1px
+                background-color: #e5e5e5
+            &_icons
+                margin-top: 18px
+                span
+                    color: $descr-text-color
+                    font-style: italic
+                    font-family: "Roboto - Light Italic"
+                    font-size: 15px
+                    font-weight: 400
+                    margin-right: 5px
+                a
+                    margin-right: 15px
+                    &:last-child
+                        margin-right: 0
+        &-form
+            margin-top: 40px
+            form
+                display: flex
+            input
+                width: 230px
+                height: 40px
+                border: 1px solid #e7e7e7
+                background-color: #ffffff
+                padding-left: 13px
+                &::placeholder
+                    color: #cccccc
+                    font-style: italic
+                    font-family: "Roboto - Light Italic"
+                    font-size: 15px
+                    font-weight: 400
+            button
+                padding: 7px 25px
+                background-color: $main-color
+                color: #fff
+                font-size: 14px
+                border: 1px solid $main-color
+                font-weight: 700
+                text-transform: uppercase
+                margin: 0
+                transition: .5s all
+                &:hover
+                    background: #fff
+                    color: $main-color
