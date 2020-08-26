@@ -10,6 +10,21 @@
         font-weight: 400
         line-height: 24px
     &__descr
+    &__wrapper
+        margin-top: 90px
+        width: 100%
+        display: flex
+    &__descr
+        &-item
+            margin-bottom: 15px
+            cursor: pointer
+            &:last-child
+                margin-bottom: 0
+            &-active
+                .weDo__descr-arrow
+                    transform: rotate(180deg)
+                .weDo__descr-content
+                    display: block
         &-title
             display: flex
             justify-content: space-between
@@ -31,6 +46,7 @@
             height: 181px
             padding: 20px 20px 20px 20px
             border: 1px solid #e5e5e5
+            transition: .5s all
             &-text
                 padding-right: 10px
                 height: 100%
