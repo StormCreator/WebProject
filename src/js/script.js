@@ -1,7 +1,7 @@
 import WorkCards from './modules/workCards';
 import WeCards from './modules/weCards';
 import Scrolling from './modules/scrolling';
-
+import {openModal, closeModal} from './modules/modal';
 
 
 
@@ -16,6 +16,8 @@ window.addEventListener('DOMContentLoaded', function() {
     
     WorkCards('.weDo__descr-arrow img', '.weDo__descr-content');
     Scrolling();
+    openModal('.modal-order', '.shopping');
+    closeModal('.modal__close', '.modal-order');
 });
 
 
