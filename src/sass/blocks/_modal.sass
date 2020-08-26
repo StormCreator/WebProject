@@ -1,0 +1,61 @@
+.modal
+    display: none
+    width: 500px
+    height: 500px
+    position: absolute
+    top: 20%
+    right: 50%
+    transform: translateX(50%)
+    background-color: $main-color
+    border-radius: 6px
+    &__title
+        padding: 20px
+        text-align: center
+        color: #fff
+        font-size: 20px
+        font-weight: 700
+    &__form
+        padding: 0px 15px
+        form
+            border-radius: 6px
+            background-color: #fff
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            padding: 20px 0
+            input
+                width: 400px
+                border: 1px solid $descr-text-color
+                border-radius: 30px
+                padding: 15px
+                margin-top: 10px
+                &:last-child
+                    margin-top: 0
+            textarea
+                width: 400px
+                margin-top: 10px
+                border: 1px solid $descr-text-color
+                padding: 10px
+                border-radius: 6px
+            button
+                margin-top: 15px
+                width: 400px
+                padding: 10px
+                background-color: $main-color
+                font-weight: 700
+                font-size: 20px
+                color: #fff
+                border-radius: 6px
+    &__close
+        position: absolute
+        top: 15px
+        right: 7px
+        font-size: 40px
+        line-height: 15px
+        color: #fff
+        cursor: pointer
+
+
+            
