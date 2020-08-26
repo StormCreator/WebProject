@@ -10,6 +10,13 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     WeCards('.weDo__descr-arrow img', '.weDo__descr-item', 'weDo__descr-item-active');
     Scrolling();
+
+    // navbar menu
+    $(document).ready(function () {
+        $('.hamburger').on('click', ()=> {
+            $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+        });
+    });
 });
 
 
