@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     WeCards('.weDo__descr-arrow img', '.weDo__descr-item', 'weDo__descr-item-active');
     
-    WorkCards('.weDo__descr-arrow img', '.weDo__descr-content');
     Scrolling();
 
     // navbar menu
