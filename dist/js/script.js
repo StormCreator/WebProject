@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function() {
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/slider/prev-arrow.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../icons/slider/next-arrow.png"></button>',
     });
-    WeCards('.weDo__descr-item', '.weDo__descr-content');
+    WeCards('.weDo__descr-arrow img', '.weDo__descr-item', 'weDo__descr-item-active');
     
     Scrolling();
 
