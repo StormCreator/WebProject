@@ -2,6 +2,7 @@ import WorkCards from './modules/workCards';
 import WeCards from './modules/weCards';
 import Scrolling from './modules/scrolling';
 import {openModal, closeModal} from './modules/modal';
+import Hamburger from './modules/hamburger';
 
 
 
@@ -18,12 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
     Scrolling();
 
     // navbar menu
-    $(document).ready(function () {
-        $('.hamburger').on('click', ()=> {
-            $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
-        });
-    });
-
+    Hamburger('.hamburger', '.menu_link');
     openModal('.modal-order', '.shopping');
     closeModal('.modal__close', '.modal-order');
 });
