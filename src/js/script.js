@@ -3,6 +3,7 @@ import WeCards from './modules/weCards';
 import Scrolling from './modules/scrolling';
 import {openModal, closeModal} from './modules/modal';
 import Hamburger from './modules/hamburger';
+import Search from './modules/search';
 
 
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', function() {
     Hamburger('.hamburger', '.menu_link');
     openModal('.modal-order', '.shopping');
     closeModal('.modal__close', '.modal-order');
+    Search('.search', '.basket', 'basket-active');
 });
 
 
