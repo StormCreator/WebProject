@@ -1,4 +1,4 @@
-function Hamburger(hamburgerSelector, linksSelector){
+function Hamburger(hamburgerSelector, linksSelector, basketSelector){
 
     const menuLinks = document.querySelectorAll(linksSelector);
 
@@ -11,6 +11,10 @@ function Hamburger(hamburgerSelector, linksSelector){
     });
 
     $(hamburgerSelector).on('click', ()=> {
+        $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+    });
+
+    $(basketSelector).on('click', ()=> {
         $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
     });
 }
