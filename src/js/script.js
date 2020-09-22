@@ -17,9 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
     WeCards('.weDo__descr-arrow img', '.weDo__descr-item', 'weDo__descr-item-active');
     
     Scrolling();
-
-    // navbar menu
-    Hamburger('.hamburger', '.menu_link', '.shopping');
+    Hamburger('.hamburger', '.menu_link', '.shopping', '.navigation');
     openModal('.modal-order', '.shopping');
     closeModal('.modal__close', '.modal-order');
     Search('.search', '.basket', 'basket-active');

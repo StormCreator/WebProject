@@ -1,12 +1,14 @@
-function Hamburger(hamburgerSelector, linksSelector, basketSelector){
+function Hamburger(hamburgerSelector, linksSelector, basketSelector, navigationSelector){
 
-    const menuLinks = document.querySelectorAll(linksSelector);
-
-    console.log('toggle active');
+    const menuLinks = document.querySelectorAll(linksSelector),
+            navigation = document.querySelector(navigationSelector),
+            hamburger = document.querySelector(hamburgerSelector);
 
     menuLinks.forEach(item => {
         item.addEventListener('click', () => {
-            $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+            if(hamburger.classList.contains('active')){
+                $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+            }
         });
     });
 
@@ -15,7 +17,9 @@ function Hamburger(hamburgerSelector, linksSelector, basketSelector){
     });
 
     $(basketSelector).on('click', ()=> {
-        $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+        if(navigation.classList.contains('active')){
+            $('.navigation, .basket, .hamburger, .menu').toggleClass('active');
+        }
     });
 }
 
